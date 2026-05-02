@@ -35,7 +35,7 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main-content">
         <article>
             <h2>Majorca</h2>
             <section id="intro">
@@ -235,7 +235,7 @@
         </article>
     </main>
     <footer>
-        <section id="contact-us">
+        <form id="contact-us">
             Contact Us <span id="required">(*required)</span>
             
                 <div>
@@ -257,8 +257,8 @@
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input type="radio" id="contact-email" name="contact" required>
-                        <label>Email</label>
+                        <input type="radio" id="contact-email" name="contact" value="email" required>
+                        <label for="contact-email">Email</label>
                     </div>
                     <div>
                         <input type="radio" id="contact-text" name="contact">
@@ -271,7 +271,7 @@
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
+                    <select id="select-destination" name="destination">
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -286,7 +286,7 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
+                    <select id="select-travel-time" name="travel-time">
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
@@ -296,6 +296,7 @@
                     </select>
                 </fieldset>
                 <input type="submit" id="submit" value="Submit">
+                </form>
         </section>
         <section id="legal">
             Legal
